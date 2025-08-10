@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Language Tutor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Tutor de Idiomas</h1>
+      <select id="language">
+        <option value="English">English</option>
+        <option value="French">Français</option>
+        <option value="German">Deutsch</option>
+        <option value="Portuguese">Português</option>
+      </select>
+      <button id="modeToggle">Lección estructurada</button>
+      <span id="proficiency" class="proficiency">Beginner</span>
+    </header>
+    <main>
+      <div id="conversation" class="conversation"></div>
+      <aside class="sidebar">
+        <section>
+          <h2>Retroalimentación</h2>
+          <div id="feedback"></div>
+        </section>
+        <section>
+          <h2>Objetivos</h2>
+          <ul id="objectives"></ul>
+          <input id="newObjective" placeholder="Nuevo objetivo">
+          <button id="addObjective">Añadir</button>
+        </section>
+        <section>
+          <h2>Progreso</h2>
+          <label>Vocabulario</label>
+          <div class="bar"><div id="vocabBar" class="bar-inner"></div></div>
+          <label>Gramática</label>
+          <div class="bar"><div id="grammarBar" class="bar-inner"></div></div>
+          <label>Conversación</label>
+          <div class="bar"><div id="timeBar" class="bar-inner"></div></div>
+          <div id="errors"></div>
+        </section>
+        <section>
+          <h2>Diario</h2>
+          <div id="diary"></div>
+        </section>
+      </aside>
+    </main>
+    <footer>
+      <form id="chatForm">
+        <input id="message" autocomplete="off" placeholder="Escribe un mensaje" />
+        <button>Enviar</button>
+      </form>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
